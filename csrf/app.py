@@ -21,7 +21,7 @@ def alterar_email():
     
     # Valida o token CSRF
     if not validate_csrf_token(session.get('csrf_token'), request.form.get('csrf_token')):
-        return "Token CSRF inválido!", 403
+        return "Não foi possível alterar!", 400
 
     # Lógica para alterar o e-mail
     novo_email = request.form.get('novo_email')
