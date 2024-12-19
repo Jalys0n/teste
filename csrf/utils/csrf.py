@@ -1,3 +1,4 @@
+# Função para gerar e validar token CRSF
 import secrets
 
 def generate_csrf_token():

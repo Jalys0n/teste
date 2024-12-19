@@ -1,3 +1,4 @@
+#Implementação 
 from flask import Flask, render_template, request, session
 from utils.csrf import generate_csrf_token, validate_csrf_token
 import secrets
